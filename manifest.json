@@ -1,0 +1,19 @@
+{
+    "name": "VKIgnoreList",
+    "description": "idk lol",
+    "version": "0.1",
+    "manifest_version": 3,
+
+    "action": {
+        "default_popup":"popup.html"
+    },
+    "background": {
+    },
+    "permissions": ["activeTab", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://vk.com/im*"],
+            "js": ["content_script.js"]
+        }
+      ]
+}
